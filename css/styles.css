@@ -306,4 +306,24 @@ button {
   .sidebar {
     position: static;
   }
+
+  .contenido {
+    border-right: none;
+    padding-right: 0px;
+    width: 90vw;
+  }
+
+  .btn-cerrar {
+    right: 10px;
+    top: 10px;
+  } 
+
+  .header{
+    height: 15vh;
+    justify-content: space-around;
+  }
+  
+  .logo{
+    margin-top: 2rem;
+  }
 }
