@@ -1,23 +1,83 @@
-/* RESET */
+/* ===== RESET ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BODY */
+/* ===== BODY GENERAL ===== */
 body {
   font-family: 'Segoe UI', sans-serif;
   background: #f4f6f8;
   color: #333;
 }
 
-/* HEADER */
+/* ===== LOGIN ===== */
+#login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f2f5;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+#login h2 {
+  margin-bottom: 20px;
+}
+
+#login input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#login button {
+  width: 100%;
+  padding: 10px;
+  background: #007BFF;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#login button:hover {
+  background: #0056b3;
+}
+
+/* ===== HOME ===== */
+#home {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+body.app-mode #home {
+  opacity: 1;
+}
+
+body.app-mode {
+  background: #f4f6f8;
+}
+
+/* ===== HEADER ===== */
 .header {
   background: #1f7a63;
   color: white;
   padding: 20px;
   text-align: center;
+  position: relative;
 }
 
 .logo {
@@ -30,7 +90,7 @@ body {
   opacity: 0.8;
 }
 
-/* LAYOUT */
+/* ===== LAYOUT ===== */
 .layout {
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -38,37 +98,50 @@ body {
   padding: 20px;
 }
 
-/* CONTENIDO */
-.contenido{
+/* ===== CONTENIDO ===== */
+.contenido {
   border-right: 2px solid #e0e0e0;
   padding-right: 20px;
+  width: 75vw;
 }
 
 .contenido section {
   margin-bottom: 20px;
-  width: 70vw;
 }
 
 h2 {
   margin-bottom: 10px;
 }
 
-/* GRID CON SCROLL HORIZONTAL */
+.btn-cerrar {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.btn-cerrar:hover {
+  background: #cc0000;
+}
+
+/* ===== GRID (scroll horizontal) ===== */
 .grid {
   display: flex;
   gap: 15px;
   overflow-x: auto;
   padding-bottom: 10px;
   scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
 }
 
-/* SCROLL PERSONALIZADO */
+/* Scroll personalizado */
 .grid::-webkit-scrollbar {
   height: 8px;
-}
-
-.grid::-webkit-scrollbar-track {
-  background: transparent;
 }
 
 .grid::-webkit-scrollbar-thumb {
@@ -80,21 +153,21 @@ h2 {
   background: #145c49;
 }
 
-/* Firefox */
 .grid {
   scrollbar-width: thin;
   scrollbar-color: #1f7a63 transparent;
 }
 
-/* CARD */
+/* ===== CARD ===== */
 .card {
   min-width: 180px;
-  max-width: 50px;
+  max-width: 75px;
   background: white;
   border-radius: 12px;
   padding: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   transition: 0.2s;
+  scroll-snap-align: start;
 }
 
 .card:hover {
@@ -111,10 +184,11 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* BOTONES */
+/* ===== BOTONES ===== */
 button {
   border: none;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 .card button {
@@ -130,7 +204,7 @@ button {
   background: #145c49;
 }
 
-/* SIDEBAR */
+/* ===== SIDEBAR ===== */
 .sidebar {
   background: white;
   border-radius: 12px;
@@ -138,10 +212,10 @@ button {
   height: fit-content;
   position: sticky;
   top: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-/* CARRITO */
+/* ===== CARRITO ===== */
 .carrito-lista {
   max-height: 300px;
   overflow-y: auto;
@@ -177,7 +251,7 @@ button {
   border-radius: 4px;
 }
 
-/* TOTAL */
+/* ===== TOTAL ===== */
 .carrito-footer {
   display: flex;
   justify-content: space-between;
@@ -185,7 +259,7 @@ button {
   margin: 10px 0;
 }
 
-/* BOTÓN FINAL */
+/* ===== BOTÓN FINAL ===== */
 .btn-comprar {
   width: 100%;
   background: #1f7a63;
@@ -199,19 +273,18 @@ button {
   background: #145c49;
 }
 
-/* VACÍO */
+/* ===== CARRITO VACÍO ===== */
 .carrito-vacio {
   text-align: center;
   color: gray;
   padding: 20px;
 }
 
-/* IMÁGENES */
+/* ===== IMÁGENES ===== */
 .card-img {
   width: 100%;
   height: 75px;
   object-fit: cover;
-  align-content: center;
   border-radius: 8px;
   margin-bottom: 10px;
 }
@@ -224,7 +297,7 @@ button {
   margin-right: 10px;
 }
 
-/* RESPONSIVE */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .layout {
     grid-template-columns: 1fr;
