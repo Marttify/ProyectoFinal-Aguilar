@@ -70,6 +70,10 @@ function mostrarError() {
     icon: 'error',
     title: 'Error',
     text: 'Usuario o contraseña incorrectos',
+    timer: 1200,
+    showConfirmButton: false,
+    color: "#1b5e20",
+    iconColor: "#2e7d32"
   });
 }
 
