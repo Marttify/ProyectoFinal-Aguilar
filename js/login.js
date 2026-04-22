@@ -22,7 +22,11 @@ function validarCampos(user, pass) {
     Swal.fire({
       icon: 'warning',
       title: 'Campos incompletos',
-      text: 'Ingresá usuario y contraseña'
+      text: 'Ingresá usuario y contraseña',
+      timer: 1200,
+      showConfirmButton: false,
+      color: "#1b5e20",
+      iconColor: "#2e7d32"
     });
     return false;
   }
@@ -41,7 +45,6 @@ function iniciarSesion() {
     text: 'Ingreso correcto',
     timer: 1200,
     showConfirmButton: false,
-    background: "#e6ffed", 
     color: "#1b5e20",
     iconColor: "#2e7d32"
   });
@@ -66,7 +69,7 @@ function mostrarError() {
   Swal.fire({
     icon: 'error',
     title: 'Error',
-    text: 'Usuario o contraseña incorrectos'
+    text: 'Usuario o contraseña incorrectos',
   });
 }
 
