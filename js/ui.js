@@ -45,6 +45,7 @@ function renderCarrito() {
   carrito.forEach((item, index) => {
     contenedor.innerHTML += `
       <div class="carrito-item">
+        ${item.img ? `<img class="carrito-item-img" src="${item.img}" alt="${item.nombre}">` : ''}
         <div class="item-info">
           <h4>${item.nombre}</h4>
           <p class="categoria">${item.categoria}</p>

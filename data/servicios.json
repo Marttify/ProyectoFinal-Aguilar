@@ -3,30 +3,28 @@
     "id": 101,
     "nombre": "Corte de Pasto",
     "precio": 8000,
-    "categoria": "servicio"
+    "categoria": "servicio",
+    "img": "https://www.municipalidadchillan.cl/sitio/documentos/noticias/23b295df3-Municipio-inicio-masivo-operativo-de-corte-de-pasto-primaveral.jpg"
   },
   {
     "id": 102,
     "nombre": "Poda de Árboles",
     "precio": 12000,
-    "categoria": "servicio"
+    "categoria": "servicio",
+    "img": "https://www.altuna.es/wp-content/uploads/2025/01/ALTUNA-HERRAMIENTAS-DE-PODA-PRUNING-SHEARS-1024x682.jpg"
   },
   {
     "id": 103,
     "nombre": "Mantenimiento de Jardines",
     "precio": 15000,
-    "categoria": "servicio"
-  },
-  {
-    "id": 104,
-    "nombre": "Limpieza de Canales",
-    "precio": 10000,
-    "categoria": "servicio"
+    "categoria": "servicio",
+    "img": "https://serinma.com/wp-content/uploads/2019/04/AdobeStock_255490151-768x512.jpeg"
   },
   {
     "id": 105,
     "nombre": "Reparacion de Motores",
     "precio": 20000,
-    "categoria": "servicio"
+    "categoria": "servicio",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUqXEQICXVrO4xN_H_VihoV-AjD1OOkuQaxQ&s"
   }
 ]
