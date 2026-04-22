@@ -1,6 +1,13 @@
-/** Documentacion:
- * guarda el carrito en el Storage cada vez que se agrega o elimina un item, y lo carga al iniciar la página
- */
+/** 
+ * Maneja el carrito de forma simple:
+ * - Guarda lo que agregás en el localStorage para que no se pierda
+ * - Lo recupera cuando cargás la página
+ * - Suma los precios para mostrar el total
+ * - Permite vaciar el carrito al comprar
+ * - Agrega productos o servicios al carrito
+*/
+
+
 function guardarCarrito() {
   localStorage.setItem("carrito", JSON.stringify(carrito));
 }
@@ -27,7 +34,7 @@ function finalizarCompra() {
   mostrarMensaje("Compra realizada con éxito");
 }
 
-window.agregarAlCarrito = function(id) {
+window.agregarAlCarrito = function (id) {
   const item = [...productos, ...servicios].find(i => i.id === id);
 
   carrito.push(item);

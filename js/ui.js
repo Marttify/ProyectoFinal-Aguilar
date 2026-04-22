@@ -1,3 +1,11 @@
+/**
+ * Maneja todo lo visual:
+ * - Muestra productos y servicios en pantalla
+ * - Genera las cards con botón para agregar al carrito
+ * - Renderiza el carrito con sus items
+ * - Actualiza el total y muestra si está vacío
+*/
+
 function renderTodo() {
   renderItems(productos, "productosContainer");
   renderItems(servicios, "serviciosContainer");

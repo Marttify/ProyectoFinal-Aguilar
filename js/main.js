@@ -1,3 +1,11 @@
+/**
+ * Maneja la inicialización y eventos:
+ * - Carga datos y carrito al iniciar la página
+ * - Renderiza productos y carrito
+ * - Ejecuta la compra al hacer click en el botón
+ * - Permite eliminar items del carrito
+*/
+
 document.addEventListener("DOMContentLoaded", async () => {
   await cargarDatos();
   cargarCarrito();

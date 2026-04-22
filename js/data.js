@@ -1,3 +1,10 @@
+/**
+ * Maneja los datos base de la app:
+ * - Guarda productos, servicios y el carrito en arrays
+ * - Trae los datos desde archivos JSON
+ * - Los carga al iniciar para poder usarlos en la app
+*/
+
 let productos = [];
 let servicios = [];
 let carrito = [];
