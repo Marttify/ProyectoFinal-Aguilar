@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "nombre": "Aceite 2T",
+    "precio": 5000,
+    "categoria": "insumos"
+  },
+  {
+    "id": 2,
+    "nombre": "Cuchilla Cortacésped",
+    "precio": 15000,
+    "categoria": "repuestos"
+  },
+  {
+    "id": 4,
+    "nombre": "Bujía NGK",
+    "precio": 2800,
+    "categoria": "insumos"
+  },
+  {
+    "id": 5,
+    "nombre": "Tanque de Combustible 10L",
+    "precio": 12000,
+    "categoria": "herramientas"
+  },
+  {
+    "id": 6,
+    "nombre": "Hilo para Bordeadora",
+    "precio": 4500,
+    "categoria": "insumos"
+  },
+  {
+    "id": 7,
+    "nombre": "Guantes de Trabajo Reforzados",
+    "precio": 6000,
+    "categoria": "seguridad"
+  },
+  {
+    "id": 8,
+    "nombre": "Casco Protector con Visor",
+    "precio": 18000,
+    "categoria": "seguridad"
+  },
+  {
+    "id": 10,
+    "nombre": "Kit Herramientas Básico",
+    "precio": 25000,
+    "categoria": "herramientas"
+  },
+  {
+    "id": 11,
+    "nombre": "Correa para Cortacésped",
+    "precio": 9000,
+    "categoria": "repuestos"
+  },
+  {
+    "id": 12,
+    "nombre": "Bidón Mezclador 2T",
+    "precio": 5500,
+    "categoria": "herramientas"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 101,
+    "nombre": "Corte de Pasto",
+    "precio": 8000,
+    "categoria": "servicio"
+  },
+  {
+    "id": 102,
+    "nombre": "Poda de Árboles",
+    "precio": 12000,
+    "categoria": "servicio"
+  },
+  {
+    "id": 103,
+    "nombre": "Mantenimiento de Jardines",
+    "precio": 15000,
+    "categoria": "servicio"
+  },
+  {
+    "id": 104,
+    "nombre": "Limpieza de Canales",
+    "precio": 10000,
+    "categoria": "servicio"
+  },
+  {
+    "id": 105,
+    "nombre": "Reparacion de Motores",
+    "precio": 20000,
+    "categoria": "servicio"
+  }
+]

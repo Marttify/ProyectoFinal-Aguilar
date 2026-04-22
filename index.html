@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgroServicios</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="logo">
+      🌿 <span>AgroServicios</span>
+    </div>
+    <p class="subtitle">Servicios rurales y motoimplementos</p>
+  </header>
+
+  <main class="layout">
+
+    <!-- IZQUIERDA -->
+    <div class="contenido">
+
+      <section>
+        <h2>Productos</h2>
+        <div id="productosContainer" class="grid"></div>
+      </section>
+
+      <section>
+        <h2>Servicios</h2>
+        <div id="serviciosContainer" class="grid"></div>
+      </section>
+
+    </div>
+
+    <!-- DERECHA (carrito sticky tipo ecommerce real) -->
+    <aside class="sidebar">
+      <h2>Carrito</h2>
+
+      <div id="carrito" class="carrito-lista"></div>
+
+      <div class="carrito-footer">
+        <p>Total</p>
+        <span>$<span id="total">0</span></span>
+      </div>
+
+      <button id="btnFinalizar" class="btn-comprar">
+        Finalizar Compra
+      </button>
+    </aside>
+
+  </main>
+
+  <!-- JS -->
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
