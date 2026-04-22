@@ -40,7 +40,10 @@ function iniciarSesion() {
     title: 'Bienvenido',
     text: 'Ingreso correcto',
     timer: 1200,
-    showConfirmButton: false
+    showConfirmButton: false,
+    background: "#e6ffed", 
+    color: "#1b5e20",
+    iconColor: "#2e7d32"
   });
 
   localStorage.setItem('login', 'true');
