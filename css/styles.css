@@ -39,23 +39,57 @@ body {
 }
 
 /* CONTENIDO */
+.contenido{
+  border-right: 2px solid #e0e0e0;
+  padding-right: 20px;
+}
+
 .contenido section {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  width: 70vw;
 }
 
 h2 {
   margin-bottom: 10px;
 }
 
-/* GRID PRODUCTOS */
+/* GRID CON SCROLL HORIZONTAL */
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  display: flex;
   gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+/* SCROLL PERSONALIZADO */
+.grid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.grid::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.grid::-webkit-scrollbar-thumb {
+  background: #1f7a63;
+  border-radius: 10px;
+}
+
+.grid::-webkit-scrollbar-thumb:hover {
+  background: #145c49;
+}
+
+/* Firefox */
+.grid {
+  scrollbar-width: thin;
+  scrollbar-color: #1f7a63 transparent;
 }
 
 /* CARD */
 .card {
+  min-width: 180px;
+  max-width: 50px;
   background: white;
   border-radius: 12px;
   padding: 15px;
@@ -116,8 +150,8 @@ button {
 
 .carrito-item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 8px;
   padding-bottom: 8px;
   border-bottom: 1px solid #eee;
@@ -172,10 +206,12 @@ button {
   padding: 20px;
 }
 
+/* IMÁGENES */
 .card-img {
   width: 100%;
-  height: 120px;
+  height: 75px;
   object-fit: cover;
+  align-content: center;
   border-radius: 8px;
   margin-bottom: 10px;
 }
