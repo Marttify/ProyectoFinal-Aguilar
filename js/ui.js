@@ -19,6 +19,8 @@ function renderItems(lista, contenedorId) {
   lista.forEach(item => {
     contenedor.innerHTML += `
       <div class="card">
+        ${item.img ? `<img class="card-img" src="${item.img}" alt="${item.nombre}">` : ''}
+        <p class="categoria">${item.categoria}</p>
         <h3>${item.nombre}</h3>
         <p>$${item.precio}</p>
         <button onclick="agregarAlCarrito(${item.id})">

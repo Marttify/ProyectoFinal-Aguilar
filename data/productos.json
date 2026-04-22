@@ -3,60 +3,65 @@
     "id": 1,
     "nombre": "Aceite 2T",
     "precio": 5000,
-    "categoria": "insumos"
+    "categoria": "insumos",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_997204-MLA81787441364_012025-F.webp",
+    "stock": 20
   },
   {
     "id": 2,
     "nombre": "Cuchilla Cortacésped",
     "precio": 15000,
-    "categoria": "repuestos"
+    "categoria": "repuestos",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_991684-MLA89525348980_082025-F.webp",
+    "stock": 15
   },
   {
     "id": 4,
     "nombre": "Bujía NGK",
     "precio": 2800,
-    "categoria": "insumos"
+    "categoria": "insumos",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_997204-MLA81787441364_012025-F.webp",
+    "stock": 30
   },
   {
     "id": 5,
-    "nombre": "Tanque de Combustible 10L",
+    "nombre": "Tanque Combustible",
     "precio": 12000,
-    "categoria": "herramientas"
+    "categoria": "herramientas",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_968439-MLA82138494161_012025-F.webp",
+    "stock": 10
   },
   {
     "id": 6,
     "nombre": "Hilo para Bordeadora",
     "precio": 4500,
-    "categoria": "insumos"
+    "categoria": "insumos",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_831292-MLA96483079986_112025-F.webp",
+    "stock": 25
   },
   {
     "id": 7,
     "nombre": "Guantes de Trabajo Reforzados",
     "precio": 6000,
-    "categoria": "seguridad"
+    "categoria": "seguridad",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_915119-MLA107112828289_022026-F.webp",
+    "stock": 20
   },
   {
     "id": 8,
-    "nombre": "Casco Protector con Visor",
+    "nombre": "Protector Facial + Auditivos 24db",
     "precio": 18000,
-    "categoria": "seguridad"
+    "categoria": "seguridad",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_830513-MLA92250163492_092025-F.webp",
+    "stock": 10
   },
   {
     "id": 10,
-    "nombre": "Kit Herramientas Básico",
+    "nombre": "Dosificador de Aceite para Mezcla",
     "precio": 25000,
-    "categoria": "herramientas"
-  },
-  {
-    "id": 11,
-    "nombre": "Correa para Cortacésped",
-    "precio": 9000,
-    "categoria": "repuestos"
-  },
-  {
-    "id": 12,
-    "nombre": "Bidón Mezclador 2T",
-    "precio": 5500,
-    "categoria": "herramientas"
+    "categoria": "herramientas",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_775074-MLA81787455036_012025-F.webp",
+    "stock": 15
+
   }
 ]
